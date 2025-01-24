@@ -19,8 +19,8 @@ const CartItem = ({ onContinueShopping }) => {
 
   const handleContinueShopping = (e) => {
    e.preventDefault();
-    onContinueShopping(true);
-    setShowCart(false);
+    onContinueShopping();
+    setShowProductList(true); 
   };
 
 
