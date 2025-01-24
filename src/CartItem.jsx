@@ -7,7 +7,7 @@ import ProductList from './ProductList';
 const CartItem = ({ onContinueShopping }) => {
   const cart = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
-  const [setShowProductList] = useState();
+  const [setShowProductList] = useState(false);
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
    return cart
